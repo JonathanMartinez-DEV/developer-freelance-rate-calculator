@@ -34,6 +34,7 @@
           required
           min="0"
           max="9999999"
+          placeholder="5000"
         />
 
         <label for="working-hours">Weekly Working Hours</label>
@@ -52,6 +53,7 @@
           name="monthly-expenses"
           id="monthly-expenses"
           min="0"
+          placeholder="2000"
         />
 
         <label for="tax-buffer">Tax Buffer</label>
@@ -65,6 +67,7 @@
         />
 
         <select name="experience-level" id="experience-level" required>
+          <option>Choose experience level</option>
           <option value="junior">Junior</option>
           <option value="mid">Mid</option>
           <option value="senior">Senior</option>
@@ -72,11 +75,11 @@
 
         <button type="submit">Calculate</button>
       </form>
-      <section class="calculated-rate-section">
+      <section class="calculated-rate-section" aria-live="polite">
         <p class="calculated-rate"></p>
         <p class="tip"></p>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
