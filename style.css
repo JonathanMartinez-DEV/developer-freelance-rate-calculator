@@ -1,3 +1,92 @@
 body {
   font-family: "Inter", sans-serif;
+  color: #ffffff;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.calculation-container {
+  background: #6943ff;
+  padding: 33px 10px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+form {
+  width: 33.3%;
+  text-align: left;
+  margin: 30px auto 0;
+  min-width: 300px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.input-container input {
+  width: 60px;
+  background-color: #6943ff;
+  border: 2px solid #b295ff;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.input-container label {
+  font-weight: 600;
+}
+
+.input-container input::placeholder {
+  color: rgb(241, 241, 241);
+  font-weight: 600;
+}
+
+button {
+  display: block;
+  width: 33.3%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: black;
+  background-color: white;
+  border: unset;
+  border-radius: 5px;
+  margin: 30px auto 0;
+  padding: 10px 0;
+}
+
+.calculated-rate-section {
+  background-color: #1f2937;
+  padding: 30px 25px 30px;
+  flex: 1 1 auto;
+}
+
+.rate-container {
+  background-color: #273549;
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.calculated-rate {
+  color: #ccc1ff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.tip {
+  color: #ffffff;
+  font-size: 0.8rem;
 }

@@ -18,66 +18,85 @@
     <title>SoloRate</title>
   </head>
   <body>
-    <header>
-      <h1 class="heading">SoloRate</h1>
-      <p class="subheading">
-        Find your ideal hourly rate — based on your real needs.
-      </p>
-    </header>
     <main>
-      <form>
-        <label for="monthly-income">Desired Monthly Income</label>
-        <input
-          type="number"
-          name="monthly-income"
-          id="monthly-income"
-          required
-          min="0"
-          max="9999999"
-          placeholder="5000"
-        />
+      <section class="calculation-container">
+        <h1 class="heading">SoloRate</h1>
+        <p class="subheading">
+          Find your ideal hourly rate based on your real needs.
+        </p>
+        <form>
+          <div class="input-container">
+            <label for="monthly-income">Desired Monthly Income:</label>
+            <input
+              type="number"
+              name="monthly-income"
+              id="monthly-income"
+              required
+              min="0"
+              max="9999999"
+              placeholder="5000"
+            />
+          </div>
 
-        <label for="working-hours">Weekly Working Hours</label>
-        <input
-          type="number"
-          name="working-hours"
-          id="working-hours"
-          value="40"
-          min="1"
-          max="100"
-        />
+          <div class="input-container">
+            <label for="working-hours">Weekly Working Hours:</label>
+            <input
+              type="number"
+              name="working-hours"
+              id="working-hours"
+              value="40"
+              min="1"
+              max="100"
+            />
+          </div>
 
-        <label for="monthly-expenses">Monthly Expenses</label>
-        <input
-          type="number"
-          name="monthly-expenses"
-          id="monthly-expenses"
-          min="0"
-          placeholder="2000"
-        />
+          <div class="input-container">
+            <label for="monthly-expenses">Monthly Expenses:</label>
+            <input
+              type="number"
+              name="monthly-expenses"
+              id="monthly-expenses"
+              min="0"
+              placeholder="2000"
+            />
+          </div>
 
-        <label for="tax-buffer">Tax Buffer</label>
-        <input
-          type="number"
-          name="tax-buffer"
-          id="tax-buffer"
-          value="20"
-          min="0"
-          max="100"
-        />
+          <div class="input-container">
+            <label for="tax-buffer">Tax Buffer:</label>
+            <input
+              type="number"
+              name="tax-buffer"
+              id="tax-buffer"
+              value="20"
+              min="0"
+              max="100"
+            />
+          </div>
 
-        <select name="experience-level" id="experience-level" required>
-          <option>Choose experience level</option>
-          <option value="junior">Junior</option>
-          <option value="mid">Mid</option>
-          <option value="senior">Senior</option>
-        </select>
+          <div class="input-container">
+            <div></div>
+            <select name="experience-level" id="experience-level" required>
+              <option>Choose experience level</option>
+              <option value="junior">Junior</option>
+              <option value="mid">Mid</option>
+              <option value="senior">Senior</option>
+            </select>
+            <div></div>
+          </div>
 
-        <button type="submit">Calculate</button>
-      </form>
+          <div><button type="submit">Calculate</button></div>
+        </form>
+      </section>
       <section class="calculated-rate-section" aria-live="polite">
-        <p class="calculated-rate"></p>
-        <p class="tip"></p>
+        <div class="rate-container">
+          <h2 class="calculated-rate">Your Recommended Hourly Rate: $00.00</h2>
+          <p class="tip">
+            Tip: Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ex
+            totam reiciendis, praesentium esse natus, officia unde quidem aut
+            libero eligendi ullam explicabo vel porro quibusdam voluptas
+            expedita adipisci laboriosam.
+          </p>
+        </div>
       </section>
     </main>
     <script src="script.js" defer></script>
