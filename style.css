@@ -49,8 +49,8 @@ form {
 }
 
 .input-container input::placeholder {
-  color: rgb(241, 241, 241);
-  font-weight: 600;
+  color: rgb(223, 223, 223);
+  font-weight: 400;
 }
 
 button {
